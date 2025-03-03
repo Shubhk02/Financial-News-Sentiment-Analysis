@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import gradio as gr
 
 
-train_data = pd.read_csv("C:/Users/nisha/Downloads/archive (1)/News_sentiment_Jan2017_to_Apr2021.csv")
+train_data = pd.read_csv("#path to CSV file")
 train_data = train_data.drop(columns=['Unnamed: 5'])
 train_data['sentiment'] = train_data['sentiment'].map({'POSITIVE': 1, 'NEGATIVE': 0})
 train_data = train_data.dropna()
